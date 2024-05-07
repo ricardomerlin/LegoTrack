@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct LegoTrackApp: App {
+struct Frontend: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Main()
         }
     }
 }

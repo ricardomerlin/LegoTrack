@@ -14,6 +14,7 @@
 		32F959E02BE9E9F3008EF696 /* LegoTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F959DF2BE9E9F3008EF696 /* LegoTrackTests.swift */; };
 		32F959EA2BE9E9F3008EF696 /* LegoTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F959E92BE9E9F3008EF696 /* LegoTrackUITests.swift */; };
 		32F959EC2BE9E9F3008EF696 /* LegoTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F959EB2BE9E9F3008EF696 /* LegoTrackUITestsLaunchTests.swift */; };
+		32F959F92BE9EEA1008EF696 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F959F82BE9EEA1008EF696 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		32F959E52BE9E9F3008EF696 /* LegoTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F959E92BE9E9F3008EF696 /* LegoTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoTrackUITests.swift; sourceTree = "<group>"; };
 		32F959EB2BE9E9F3008EF696 /* LegoTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32F959F82BE9EEA1008EF696 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		32F959C22BE9E9F2008EF696 = {
 			isa = PBXGroup;
 			children = (
+				32F959FA2BE9F090008EF696 /* Backend */,
 				32F959CD2BE9E9F2008EF696 /* LegoTrack */,
 				32F959DE2BE9E9F3008EF696 /* LegoTrackTests */,
 				32F959E82BE9E9F3008EF696 /* LegoTrackUITests */,
@@ -96,6 +99,7 @@
 			children = (
 				32F959CE2BE9E9F2008EF696 /* LegoTrackApp.swift */,
 				32F959D02BE9E9F2008EF696 /* ContentView.swift */,
+				32F959F82BE9EEA1008EF696 /* Home.swift */,
 				32F959D22BE9E9F3008EF696 /* Assets.xcassets */,
 				32F959D42BE9E9F3008EF696 /* Preview Content */,
 			);
@@ -125,6 +129,13 @@
 				32F959EB2BE9E9F3008EF696 /* LegoTrackUITestsLaunchTests.swift */,
 			);
 			path = LegoTrackUITests;
+			sourceTree = "<group>";
+		};
+		32F959FA2BE9F090008EF696 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Backend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F959D12BE9E9F2008EF696 /* ContentView.swift in Sources */,
+				32F959F92BE9EEA1008EF696 /* Home.swift in Sources */,
 				32F959CF2BE9E9F2008EF696 /* LegoTrackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

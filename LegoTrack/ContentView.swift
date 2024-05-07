@@ -1,24 +1,43 @@
-//
-//  ContentView.swift
-//  LegoTrack
-//
-//  Created by Ricardo Merlin on 5/7/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct Main: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                NavigationLink(destination: Home()) {
+                    Text("Home")
+                }
+                .padding()
+                
+                NavigationLink(destination: Option2View()) {
+                    Text("Option 2")
+                }
+                .padding()
+                
+                NavigationLink(destination: Option3View()) {
+                    Text("Option 3")
+                }
+                .padding()
+            }
+            .navigationTitle("Home")
         }
-        .padding()
+    }
+}
+
+struct Option2View: View {
+    var body: some View {
+        Text("Option 2 Details")
+            .navigationTitle("Option 2")
+    }
+}
+
+struct Option3View: View {
+    var body: some View {
+        Text("Option 3 Details")
+            .navigationTitle("Option 3")
     }
 }
 
 #Preview {
-    ContentView()
+    Main()
 }
