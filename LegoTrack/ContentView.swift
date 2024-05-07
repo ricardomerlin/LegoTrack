@@ -1,40 +1,28 @@
 import SwiftUI
 
 struct Main: View {
+    @State private var isLoggedIn = false
+
     var body: some View {
         NavigationView {
-            VStack {
-                NavigationLink(destination: Home()) {
-                    Text("Home")
+            VStack(spacing: 60) {
+                NavigationLink(destination: Lego_News()) {
+                    Text("Lego News")
                 }
                 .padding()
                 
-                NavigationLink(destination: Option2View()) {
-                    Text("Option 2")
+                NavigationLink(destination: Feed()) {
+                    Text("Feed")
                 }
                 .padding()
                 
-                NavigationLink(destination: Option3View()) {
-                    Text("Option 3")
+                NavigationLink(destination: AnyView(isLoggedIn ? AnyView(Profile()) : AnyView(LoginForm()))) {
+                    Text(isLoggedIn ? "Logout" : "Login")
                 }
                 .padding()
             }
-            .navigationTitle("Home")
+            .navigationTitle("LegoTrack")
         }
-    }
-}
-
-struct Option2View: View {
-    var body: some View {
-        Text("Option 2 Details")
-            .navigationTitle("Option 2")
-    }
-}
-
-struct Option3View: View {
-    var body: some View {
-        Text("Option 3 Details")
-            .navigationTitle("Option 3")
     }
 }
 
